@@ -8,8 +8,7 @@ WORKDIR /server
 COPY package.json pnpm-lock.yaml ./
 
 # Install all dependencies using npm
-RUN npm install -g pnpm
-RUN pnpm install
+RUN npm install
 
 # Copy source code
 COPY . .
